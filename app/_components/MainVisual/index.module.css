@@ -1,0 +1,26 @@
+.mainVisual {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  margin: 0 auto;
+}
+.sp,
+.pc {
+  object-fit: cover;
+}
+.sp {
+  display: block;
+}
+.pc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+}

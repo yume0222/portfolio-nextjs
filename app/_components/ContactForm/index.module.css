@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.textarea {
+  height: 10rem;
+}
+.required {
+  color: #d94747;
+}
+.button {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 15px 0;
+  border: solid 1px var(--color);
+  background-color: var(--color);
+  color: #ffffff;
+}
+.button:hover {
+  background: #fff;
+  color: var(--color);
+}
+.error {
+  color: var(--color-font-attention);
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    display: flex;
+  }
+  .label {
+    width: 15%;
+  }
+  .textfield,
+  .textarea {
+    width: 85%;
+  }
+}

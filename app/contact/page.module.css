@@ -1,0 +1,12 @@
+.text {
+  margin-top: 40px;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 640px) {
+  .text {
+    margin-top: 56px;
+  }
+}

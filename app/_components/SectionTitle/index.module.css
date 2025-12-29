@@ -1,0 +1,16 @@
+.title {
+  font-size: 1.5rem;
+  font-family: var(--title-font);
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+.titleMb {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .titleMb {
+    margin-bottom: 65px;
+  }
+}
