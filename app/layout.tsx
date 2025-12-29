@@ -9,7 +9,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://portfolio-nextjs-eta-ashy.vercel.app"),
   title: {
     template: "%s | ポートフォリオサイト",
     default: "ポートフォリオサイト",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     images: ["/ogp.png"],
   },
   alternates: {
-    canonical: "http://localhost:3000",
+    canonical: "https://portfolio-nextjs-eta-ashy.vercel.app",
   },
 };
 
