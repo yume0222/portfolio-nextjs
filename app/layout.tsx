@@ -45,9 +45,11 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${raleway.variable} ${notoSansJP.variable}`}>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <div className="layout">
+          <Header />
+          <main className="content">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

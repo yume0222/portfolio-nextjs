@@ -15,7 +15,9 @@
 }
 .mainNavList {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
 }
 .mainNavItem {
   font-family: var(--title-font);

@@ -10,7 +10,7 @@ import ContactSection from "./_components/ContactSection";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <MainVisual />
       <Sheet>
         <AboutSection className={styles.sectionMt} />
@@ -20,6 +20,6 @@ export default function Home() {
         <VisionSection className={styles.sectionMtSm} />
         <ContactSection className={styles.sectionMtSm} />
       </Sheet>
-    </main>
+    </>
   );
 }
