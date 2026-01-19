@@ -9,6 +9,14 @@ export type Product = {
   title: string;
   link: string;
   thumbnail: MicroCMSImage;
+  copysite?: string;
+  summary?: string;
+  background?: string;
+  techstack?: string;
+  features?: string;
+  period?: string;
+  highlights?: string;
+  challenges?: string;
 } & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
@@ -30,4 +38,22 @@ export const getProductsList = async (queries?: MicroCMSQueries) => {
     queries,
   });
   return listData;
+};
+
+export const getProductsDetail = async (
+  contentId: string,
+  queries?: MicroCMSQueries
+) => {
+  const detailData = await client.getListDetail<Product>({
+    endpoint: 'products',
+    contentId,
+    queries,
+    customRequestInit: {
+      next: {
+        revalidate: queries?.draftKey === undefined ? 60 : 0,
+      },
+    },
+  });
+
+  return detailData;
 };

@@ -1,0 +1,53 @@
+.title,
+.subTitle {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 500;
+}
+.title {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.5rem;
+  border-top: #ccc dotted 2px;
+  border-bottom: #ccc dotted 2px;
+  padding: 0.75rem;
+  line-height: 1.4;
+}
+.subTitle {
+  margin: 3rem 0 1rem;
+  font-size: 1.5rem;
+}
+.image {
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.link {
+  text-decoration: underline;
+}
+.text {
+  line-height: 1.6;
+}
+.item {
+  margin: 0.5rem 0;
+  counter-increment: list;
+}
+.item::before {
+  content: counter(list);
+  color: #93d8d0;
+  display: inline-block;
+  margin-right: 8px;
+}
+.item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #93d8d0;
+  display: inline-block;
+  margin: 0 8px 2px 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin: 0 0 1rem;
+  }
+}

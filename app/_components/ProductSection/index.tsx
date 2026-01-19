@@ -9,6 +9,8 @@ type Props = {
   className?: string;
 };
 
+export const revalidate = 60;
+
 export default async function ProductSection({ className }: Props) {
   const products = await getProductsList({ limit: PRODUCT_LIST_LIMIT });
   return (
