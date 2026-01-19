@@ -10,16 +10,16 @@ export default function SkillSection({ className }: Props) {
   const data = {
     contents: [
       {
+        label: "資格",
+        skill: "ITパスポート試験",
+      },
+      {
         label: "使用ツール",
-        skill: 
-        "AdobeXD, Figma, GitHub, AWSCloud9, microCMS, HubSpot, Vercel"
-      
+        skill: "AdobeXD, Figma, GitHub, AWSCloud9, microCMS, HubSpot, Vercel",
       },
       {
         label: "プログラミング",
-        skill: 
-          "HTML, CSS, JavaScript, PHP, Laravel, React.js, Next.js"
-        
+        skill: "HTML, CSS, JavaScript, PHP, Laravel, React.js, Next.js",
       },
     ],
   };
