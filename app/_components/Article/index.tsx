@@ -11,13 +11,14 @@ export default function Article({ data }: Props) {
   return (
     <article>
       <h3 className={styles.title}>{data.title}</h3>
-      <Image
-        src={data.thumbnail.url}
-        alt=""
-        className={styles.thumbnail}
-        width={data.thumbnail.width}
-        height={data.thumbnail.height}
-      />
+      <div className={styles.thumbnailWrapper}>
+        <Image
+          src={data.thumbnail.url}
+          alt=""
+          fill
+          className={styles.thumbnail}
+        />
+      </div>
       {data.link && (
         <>
           <h4 className={styles.subTitle}>URL</h4>
