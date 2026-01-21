@@ -96,6 +96,17 @@ export default function Article({ data }: Props) {
           />
         </>
       )}
+      {data.learned && (
+        <>
+          <h4 className={styles.subTitle}>学んだこと</h4>
+          <div
+            className={styles.text}
+            dangerouslySetInnerHTML={{
+              __html: data.learned,
+            }}
+          />
+        </>
+      )}
     </article>
   );
 }

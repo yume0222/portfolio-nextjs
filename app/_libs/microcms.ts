@@ -17,6 +17,7 @@ export type Product = {
   period?: string;
   highlights?: string;
   challenges?: string;
+  learned?: string;
 } & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
