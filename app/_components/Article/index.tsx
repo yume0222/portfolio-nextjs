@@ -35,6 +35,17 @@ export default function Article({ data }: Props) {
           </Link>
         </>
       )}
+      {data.summary && (
+        <>
+          <h4 className={styles.subTitle}>概要</h4>
+          <div
+            className={styles.text}
+            dangerouslySetInnerHTML={{
+              __html: data.summary,
+            }}
+          />
+        </>
+      )}
       {data.background && (
         <>
           <h4 className={styles.subTitle}>制作背景</h4>
