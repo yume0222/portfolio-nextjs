@@ -46,17 +46,6 @@ export default function Article({ data }: Props) {
           />
         </>
       )}
-      {data.background && (
-        <>
-          <h4 className={styles.subTitle}>制作背景</h4>
-          <div
-            className={styles.text}
-            dangerouslySetInnerHTML={{
-              __html: data.background,
-            }}
-          />
-        </>
-      )}
       {data.techstack && (
         <>
           <h4 className={styles.subTitle}>使用技術</h4>
@@ -114,6 +103,17 @@ export default function Article({ data }: Props) {
             className={styles.text}
             dangerouslySetInnerHTML={{
               __html: data.learned,
+            }}
+          />
+        </>
+      )}
+      {data.background && (
+        <>
+          <h4 className={styles.subTitle}>制作背景</h4>
+          <div
+            className={styles.text}
+            dangerouslySetInnerHTML={{
+              __html: data.background,
             }}
           />
         </>
